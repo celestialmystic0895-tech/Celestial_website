@@ -1,281 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Celestial Mystic — Rhythm Sharma</title>
-
-    <style>
-/* =========================================
-   BASE STYLES & LAYOUT IMPROVEMENTS
-   ========================================= */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #0d0d0d;
-  color: #f5f5f5;
-  line-height: 1.6;
-}
-
-header {
-  text-align: center;
-  padding: 2rem 1rem;
-  background: linear-gradient(135deg, #2b003a, #000);
-}
-
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-header p {
-  font-size: 1.1rem;
-  margin: 0;
-}
-
-/* =========================
-   HERO
-   ========================= */
-.hero {
-  padding: 2rem 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 1.5rem;
-}
-
-.intro h2 {
-  font-size: 2rem;
-}
-
-.card {
-  padding: 1rem;
-  border-radius: 12px;
-  background: #1a1a1a;
-  max-width: 340px;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
-  transition: transform 0.25s ease;
-}
-
-.card img {
-  width: 100%;
-  border-radius: 12px;
-}
-
-/* =========================
-   SERVICES
-   ========================= */
-section h2 {
-  margin-top: 2rem;
-  text-align: center;
-  font-size: 2rem;
-}
-
-.services-grid {
-  display: grid;
-  gap: 1.2rem;
-  padding: 1rem;
-}
-
-.tarot-services {
-  display: grid;
-  gap: 1.2rem;
-  padding: 1rem;
-}
-
-.tarot img {
-  width: 100%;
-  border-radius: 12px;
-}
-
-.tarot {
-  background: #1a1a1a;
-  padding: 1rem;
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(255,255,255,0.1);
-  text-align: center;
-  transition: transform 0.25s ease;
-}
-
-/* =========================
-   ABOUT
-   ========================= */
-.about {
-  padding: 2rem 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.about img {
-  width: 150px;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
-
-/* =========================
-   CONTACT
-   ========================= */
-.contact {
-  text-align: center;
-  padding: 2rem;
-}
-
-.btn {
-  padding: 0.7rem 1.5rem;
-  display: inline-block;
-  margin-top: 1rem;
-  background: #ff66cc;
-  color: #000;
-  font-weight: bold;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: transform 0.25s ease;
-}
-
-/* =========================
-   FOOTER
-   ========================= */
-footer {
-  text-align: center;
-  padding: 1.5rem;
-  background: #111;
-  margin-top: 2rem;
-}
-
-/* =========================================
-   RESPONSIVE DESIGN (MOBILE FIRST)
-   ========================================= */
-@media (min-width: 700px) {
-  .hero {
-    flex-direction: row;
-    justify-content: center;
-    text-align: left;
-  }
-  .services-grid, .tarot-services {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .about {
-    flex-direction: row;
-    justify-content: center;
-    gap: 2rem;
-  }
-}
-
-@media (min-width: 1000px) {
-  .services-grid, .tarot-services {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-/* =========================================
-   ANIMATIONS
-   ========================================= */
-@keyframes fadeUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-.fade-up {
-  opacity: 0;
-  animation: fadeUp 0.9s ease-out forwards;
-}
-.fade-in {
-  opacity: 0;
-  animation: fadeIn 1.2s ease-out forwards;
-}
-.fade-delay-1 { animation-delay: 0.2s; }
-.fade-delay-2 { animation-delay: 0.4s; }
-.fade-delay-3 { animation-delay: 0.6s; }
-.fade-delay-4 { animation-delay: 0.8s; }
-
-.card:hover, .tarot:hover {
-  transform: translateY(-6px);
+transform: translateY(-6px);
 }
 .btn:hover {
-  transform: translateY(-3px);
+transform: translateY(-3px);
 }
 
-    </style>
+
+</style>
 </head>
 <body>
 
+
 <header class="fade-in">
-  <h1>Celestial Mystic — Rhythm Sharma</h1>
-  <p>Astrology • Tarot • Numerology • Aura Reading • Vastu & Remedies</p>
+<h1>Celestial Mystic — Rhythm Sharma</h1>
+<p>Astrology • Tarot • Numerology • Aura Reading • Vastu & Remedies</p>
 </header>
 
+
 <section class="hero fade-up">
-  <div class="intro fade-up">
-    <h2>Welcome to Your Spiritual Awakening</h2>
-    <p>Guiding your path with clarity, intuition, and cosmic wisdom.</p>
-  </div>
+<div class="intro fade-up">
+<h2>Welcome to Your Spiritual Awakening</h2>
+<p>Guiding your path with clarity, intuition, and cosmic wisdom.</p>
+</div>
 
-  <div class="card fade-up fade-delay-1">
-    <img src="https://raw.githubusercontent.com/your-username/your-repo/main/images/celestial-intro.jpg" alt="Celestial Introduction" />
-    <p>Cosmic insights for mind, body, and spirit alignment.</p>
-  </div>
+
+<div class="card fade-up fade-delay-1">
+<img src="https://raw.githubusercontent.com/your-username/your-repo/main/images/celestial-intro.jpg" alt="Celestial Introduction" />
+<p>Cosmic insights for mind, body, and spirit alignment.</p>
+</div>
 </section>
+
 
 <section>
-  <h2>Astrology Services</h2>
-  <div class="services-grid">
+<h2>Astrology Services</h2>
+<div class="services-grid">
 
-    <div class="card fade-up fade-delay-1"><h3>Kundli Reading</h3><p>Insights into life path, career, marriage, health & destiny.</p></div>
-    <div class="card fade-up fade-delay-2"><h3>Manglik Dosh</h3><p>Detailed analysis and effective remedies.</p></div>
-    <div class="card fade-up fade-delay-3"><h3>Kaal Sarp Dosha</h3><p>Understanding karmic patterns and relief solutions.</p></div>
-    <div class="card fade-up fade-delay-4"><h3>Compatibility Matchmaking</h3><p>Perfect guidance for marriage & long-term bonds.</p></div>
 
-    <div class="card fade-up fade-delay-1"><h3>Tarot Reading</h3><p>Answers for love, career, and life decisions.</p></div>
-    <div class="card fade-up fade-delay-2"><h3>Numerology</h3><p>Your life numbers decoded for transformation.</p></div>
-    <div class="card fade-up fade-delay-3"><h3>Aura Scanning</h3><p>Understand your energy field & cleanse negativity.</p></div>
-    <div class="card fade-up fade-delay-4"><h3>Vastu Consultation</h3><p>Home & office energy alignment for prosperity.</p></div>
+<div class="card fade-up fade-delay-1"><h3>Kundli Reading</h3><p>Insights into life path, career, marriage, health & destiny.</p></div>
+<div class="card fade-up fade-delay-2"><h3>Manglik Dosh</h3><p>Detailed analysis and effective remedies.</p></div>
+<div class="card fade-up fade-delay-3"><h3>Kaal Sarp Dosha</h3><p>Understanding karmic patterns and relief solutions.</p></div>
+<div class="card fade-up fade-delay-4"><h3>Compatibility Matchmaking</h3><p>Perfect guidance for marriage & long-term bonds.</p></div>
 
-  </div>
+
+<div class="card fade-up fade-delay-1"><h3>Tarot Reading</h3><p>Answers for love, career, and life decisions.</p></div>
+<div class="card fade-up fade-delay-2"><h3>Numerology</h3><p>Your life numbers decoded for transformation.</p></div>
+<div class="card fade-up fade-delay-3"><h3>Aura Scanning</h3><p>Understand your energy field & cleanse negativity.</p></div>
+<div class="card fade-up fade-delay-4"><h3>Vastu Consultation</h3><p>Home & office energy alignment for prosperity.</p></div>
+
+
+</div>
 </section>
+
 
 <section>
-  <h2>Tarot Insights</h2>
-  <div class="tarot-services">
+<h2>Tarot Insights</h2>
+<div class="tarot-services">
 
-    <div class="tarot fade-up fade-delay-1"><img src="https://raw.githubusercontent.com/your-username/your-repo/main/images/tarot1.jpg" alt="Tarot 1"><p>Love & Relationship Guidance</p></div>
-    <div class="tarot fade-up fade-delay-2"><img src="https://raw.githubusercontent.com/your-username/your-repo/main/images/tarot2.jpg" alt="Tarot 2"><p>Career & Finances</p></div>
-    <div class="tarot fade-up fade-delay-3"><img src="https://raw.githubusercontent.com/your-username/your-repo/main/images/tarot3.jpg" alt="Tarot 3"><p>Life Decisions</p></div>
-    <div class="tarot fade-up fade-delay-4"><img src="https://raw.githubusercontent.com/your-username/your-repo/main/images/tarot4.jpg" alt="Tarot 4"><p>Spiritual & Emotional Healing</p></div>
 
-  </div>
+<div class="tarot fade-up fade-delay-1"><img src="https://raw.githubusercontent.com/your-username/your-repo/main/images/tarot1.jpg" alt="Tarot 1"><p>Love & Relationship Guidance</p></div>
+<div class="tarot fade-up fade-delay-2"><img src="https://raw.githubusercontent.com/your-username/your-repo/main/images/tarot2.jpg" alt="Tarot 2"><p>Career & Finances</p></div>
+<div class="tarot fade-up fade-delay-3"><img src="https://raw.githubusercontent.com/your-username/your-repo/main/images/tarot3.jpg" alt="Tarot 3"><p>Life Decisions</p></div>
+<div class="tarot fade-up fade-delay-4"><img src="https://raw.githubusercontent.com/your-username/your-repo/main/images/tarot4.jpg" alt="Tarot 4"><p>Spiritual & Emotional Healing</p></div>
+
+
+</div>
 </section>
+
 
 <section class="about fade-up">
-  <img src="https://raw.githubusercontent.com/your-username/your-repo/main/images/rhythm-sharma.jpg" alt="Rhythm Sharma" />
-  <div>
-    <h2>About Rhythm Sharma</h2>
-    <p>A spiritual guide with years of experience in astrology, tarot, numerology, and cosmic healing arts. Helping people align with purpose and destiny.</p>
-  </div>
+<img src="https://raw.githubusercontent.com/your-username/your-repo/main/images/rhythm-sharma.jpg" alt="Rhythm Sharma" />
+<div>
+<h2>About Rhythm Sharma</h2>
+<p>A spiritual guide with years of experience in astrology, tarot, numerology, and cosmic healing arts. Helping people align with purpose and destiny.</p>
+</div>
 </section>
+
 
 <section class="contact fade-up">
-  <h2>Contact</h2>
-  <p>Book your personalized consultation today!</p>
-  <a href="#" class="btn">WhatsApp Now</a>
+<h2>Contact</h2>
+<p>Book your personalized consultation today!</p>
+<a href="#" class="btn">WhatsApp Now</a>
 </section>
 
+
 <footer class="fade-in">
-  <p>© 2025 Celestial Mystic — Rhythm Sharma</p>
+<p>© 2025 Celestial Mystic — Rhythm Sharma</p>
 </footer>
+
 
 </body>
 </html>
